@@ -1,0 +1,151 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+nav img {
+    height: 60px;
+    width: auto;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transit
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fdf8f5;
+    color: #4d3c3c;
+    padding: 20px;
+}
+
+/* Header com logo */
+header {
+    background-color: #fef3f0;
+    padding: 20px 40px;
+    border-bottom: 2px solid #f2dede;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    color: #b06c6c;
+    letter-spacing: 1px;
+}
+
+header a {
+    font-size: 16px;
+    color: #8c5c5c;
+    text-decoration: none;
+    border: 1px solid #d8b8b8;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    background-color: #fff0f0;
+}
+
+header a:hover {
+    background-color: #f8dede;
+}
+
+/* Container do formulário */
+#containerCadastro {
+    background-color: #fffafa;
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(220, 170, 170, 0.3);
+    border: 1px solid #f0dcdc;
+}
+
+#containerCadastro h1 {
+    margin-bottom: 20px;
+    color: #a45a5a;
+    text-align: center;
+}
+
+/* Inputs */
+#containerCadastro input[type="text"],
+#containerCadastro input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #e3caca;
+    background-color: #fffefc;
+    font-size: 15px;
+}
+
+#containerCadastro input:focus {
+    border-color: #d89595;
+    outline: none;
+}
+
+/* Botões */
+#containerCadastro button {
+    background-color: #f4b6b6;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    margin: 10px 5px 0 0;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#containerCadastro button:hover {
+    background-color: #e68a8a;
+}
+
+/* Lista de flores cadastradas */
+#container-flores {
+    display: none;
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(170, 120, 120, 0.1);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #f2dede;
+}
+
+#tituloLista {
+    font-size: 20px;
+    color: #b06c6c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('flor.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #4d3c3c;
+    padding: 20px;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 250, 250, 0.8); /* camada branca suave */
+    z-index: -1;
+}

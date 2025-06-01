@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="">
+            <a href="apresentacao.html">Ver Catálogo de Flores</a>
+        </nav>
+        </header>
+    <div id="containerCadastro">
+        <h1>Cadastro de Flores</h1>
+        <input type="text" id="nomeComum" placeholder="Nome Comum">
+        <input type="text" id="nomeCientifico" placeholder="Nome Científico (Opcional)">
+        <input type="text" id="cor" placeholder="Cor">
+        <input type="text" id="tamanho" placeholder="Tamanho (ex: Pequena, Média, 30cm)">
+        <input type="number" id="preco" placeholder="Preço" step="0.01">
+        <input type="text" id="imagemUrl" placeholder="URL da Imagem (Opcional)"> <button id="btn-save">Salvar Flor</button>
+        <button id="btn-list">Listar Flores</button>
+    </div>
+
+
+    <div id="container-flores">
+        <p id="tituloLista">Flores Cadastradas</p>
+        <ul id="floresCadastradas"></ul>
+    </div>
+
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
