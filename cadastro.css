@@ -1,3 +1,38 @@
+#logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1;
+    color: #8c3356;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: 20px 0 25px 0;
+    padding: 8px 15px;
+    background: linear-gradient;
+   
+   
+    transition: all 0.4s ease-in-out;
+ 
+}
+
+#logo:hover {
+    transform: scale(1.03);
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    #logo {
+        font-size: 2.5em;
+        letter-spacing: 2px;
+        margin: 15px 0 20px 0;
+        padding: 5px 10px;
+    }
+    
+}
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -12,23 +47,17 @@ nav img {
     border-radius: 12px;
     object-fit: contain;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    transit
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #fdf8f5;
     color: #4d3c3c;
     padding: 20px;
-}
+};
 
-/* Header com logo */
+
 header {
     background-color: #fef3f0;
     padding: 20px 40px;
@@ -62,7 +91,7 @@ header a:hover {
     background-color: #f8dede;
 }
 
-/* Container do formulário */
+
 #containerCadastro {
     background-color: #fffafa;
     margin: 40px auto;
@@ -79,7 +108,7 @@ header a:hover {
     text-align: center;
 }
 
-/* Inputs */
+
 #containerCadastro input[type="text"],
 #containerCadastro input[type="number"] {
     width: 100%;
@@ -96,9 +125,9 @@ header a:hover {
     outline: none;
 }
 
-/* Botões */
+
 #containerCadastro button {
-    background-color: #f4b6b6;
+    background-color: #b76565;
     color: #fff;
     border: none;
     padding: 10px 18px;
@@ -113,7 +142,6 @@ header a:hover {
     background-color: #e68a8a;
 }
 
-/* Lista de flores cadastradas */
 #container-flores {
     display: none;
     margin-top: 40px;
@@ -146,6 +174,74 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 250, 250, 0.8); /* camada branca suave */
+    background-color: rgba(255, 250, 250, 0.8); 
     z-index: -1;
 }
+
+ul {
+    list-style: none;
+}
+
+/* Parágrafos de informação da flor */
+.info-flor {
+    font-size: 14px;
+    color: #5e4b56; /* Lilás escuro suave */
+    margin: 4px 0;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f5f7;
+    padding: 4px 6px;
+    border-radius: 6px;
+}
+
+/* Preço com destaque */
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b55a7a; /* Rosa antigo forte */
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    background-color: #fce8ee;
+    padding: 6px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Botões gerais */
+.btn-edit,
+.btn-delete {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão Editar */
+.btn-edit {
+    background-color: #fa6f8d; /* Verde menta suave */
+}
+
+.btn-edit:hover {
+    background-color: #97365d;
+    transform: scale(1.05);
+}
+
+/* Botão Deletar */
+.btn-delete {
+    background-color: #7a273c; /* Rosa chá */
+}
+
+.btn-delete:hover {
+    background-color: #d18097;
+    transform: scale(1.05);
+}
+

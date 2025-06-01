@@ -88,17 +88,37 @@ function createListItem(index, flor) {
         listItem.appendChild(imagemElement);
     }
 
+
+
+    // const nomeCientificoElement = document.createElement("p");
+    // nomeCientificoElement.textContent = `Nome Científico: ${flor.nomeCientifico}`;
+
+    // const corElement = document.createElement("p");
+    // corElement.textContent = `Cor: ${flor.cor}`;
+
+    // const tamanhoElement = document.createElement("p");
+    // tamanhoElement.textContent = `Tamanho: ${flor.tamanho}`;
+
+    // const precoElement = document.createElement("p");
+    // precoElement.textContent = `Preço: R$ ${flor.preco.toFixed(2)}`;
+    
     const nomeCientificoElement = document.createElement("p");
-    nomeCientificoElement.textContent = `Nome Científico: ${flor.nomeCientifico}`;
+nomeCientificoElement.classList.add("info-flor");
+nomeCientificoElement.textContent = `Nome Científico: ${flor.nomeCientifico}`;
 
-    const corElement = document.createElement("p");
-    corElement.textContent = `Cor: ${flor.cor}`;
+const corElement = document.createElement("p");
+corElement.classList.add("info-flor");
+corElement.textContent = `Cor: ${flor.cor}`;
 
-    const tamanhoElement = document.createElement("p");
-    tamanhoElement.textContent = `Tamanho: ${flor.tamanho}`;
+const tamanhoElement = document.createElement("p");
+tamanhoElement.classList.add("info-flor");
+tamanhoElement.textContent = `Tamanho: ${flor.tamanho}`;
 
-    const precoElement = document.createElement("p");
-    precoElement.textContent = `Preço: R$ ${flor.preco.toFixed(2)}`;
+const precoElement = document.createElement("p");
+precoElement.classList.add("preco");
+precoElement.textContent = `Preço: R$ ${flor.preco.toFixed(2)}`;
+
+
 
     const btnEdit = document.createElement("button");
     btnEdit.textContent = 'Editar';
